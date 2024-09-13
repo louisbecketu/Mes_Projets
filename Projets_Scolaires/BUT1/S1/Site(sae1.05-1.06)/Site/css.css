@@ -1,0 +1,444 @@
+body{
+    background-image: url("img/imageDeFond.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+a {
+    color: lightgrey; 
+    cursor: pointer; 
+    transition: color 0.3s;
+    font-size: 13px;
+    margin-right: 15px;
+}
+
+a:hover {
+    color: rgb(209, 54, 57, 1.0);
+}
+
+.content{
+    flex: 1;
+    padding-bottom: 60px;
+}
+
+.Accueil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid aliceblue;
+    border-radius: 20px;
+    padding: 50px;
+    margin-bottom: 100px;
+    color: white;
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.tab-jeux{
+    text-align: center;
+    border: 5px solid aliceblue;
+    border-radius: 20px;
+    background-color: black;
+    padding: 20px;
+}
+
+.JEUX{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#img-lol{
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+    border: 6px solid black;
+}
+
+#img-lol:hover{
+    border: 6px solid rgb(45, 45, 45, 1.0);
+    border-radius: 20px;
+}
+
+#img-valo{
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+    border: 6px solid black;
+}
+
+#img-valo:hover{
+    border: 6px solid rgb(45, 45, 45, 1.0);
+    border-radius: 20px;
+}
+
+#img-tft{
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+    border: 6px solid black;
+}
+
+#img-tft:hover{
+    border: 6px solid rgb(45, 45, 45, 1.0);
+    border-radius: 20px;
+}
+
+#img-actus{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+    border: 6px solid black;
+}
+
+#img-actus:hover{
+    border: 6px solid rgb(209, 54, 57, 1.0);
+    border-radius: 20px;
+}
+
+.tab-actus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 5px solid aliceblue;
+    border-radius: 20px;
+    background-color: #2d2d2d;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.ACTUS{
+    align-items: center;
+    color: rgb(209, 54, 57, 1.0);
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+img{
+    width: 45px;
+    height: 45px;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+img#logoG{
+    width: 70px;
+    height: 70px;
+}
+
+img#img-foot{
+    width: 30px;
+    height: 30px;
+}
+
+.deco{
+    width: 25px;
+    height: 25px;
+    background-image: url('img/deconnexion.png'); 
+    background-size: cover;
+    transition: background-image;
+    margin-top: 28px;
+    margin-left: 20px;
+}
+
+.deco:hover {
+    background-image: url('img/deconnexionRouge.png');
+}
+
+img#msg{
+    width: 30px;
+    height: 30px;
+}
+
+#Riot{
+    grid-row: 2;
+}
+
+div.button-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.container{
+    margin-bottom: 60px;
+    flex: 1;
+}
+
+.conteneur{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connexion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 10%;
+    max-width: 300px;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: lightgrey;
+}
+
+label {
+    display: block;
+    padding: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(45, 45, 45);
+    color: aliceblue;
+}
+
+h1#titre{
+    text-align: center;
+}
+
+form{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto   ;
+    max-width: 600px;
+    margin: O auto;
+}
+
+form#formulaire{
+    padding: 20px;
+    border: 2px solid rgb(257, 54, 57, 1.0);
+    border-radius: 15px;
+    background-color: lightgrey;
+    margin-bottom: 30px;
+}
+
+.menu{
+    background-color: rgb(45, 45, 45);
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.menu:hover {
+    background-color: rgb(209,54,57);
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-child {
+    display: none;
+    background-color: rgb(45, 45, 45);
+    min-width: 200px;
+}
+
+.dropdown-child a {
+    color: white;
+    padding: 20px;
+}
+
+button#deplacement{
+    height: 50px;
+    width: 100px;
+    background-color: rgb(45,45,45);
+    color: white;p
+}
+
+button#deplacement:hover{
+    background-color: rgb(209,54,57);
+    color: black;
+}
+
+footer{
+    position: sticky;
+    width: 100%;
+    background-color: rgb(45, 45, 45);
+}
+
+.icon{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+table{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.image-X {
+    width: 25px;
+    height: 25px;
+    background-image: url('img/X.png');
+    background-size: cover;
+    transition: background-image;
+}
+
+.image-X:hover {
+    background-image: url('img/XRouge.png'); 
+}
+
+.image-F {
+    width: 25px;
+    height: 25px;
+    background-image: url('img/facebook.png'); 
+    background-size: cover;
+    transition: background-image;
+}
+
+.image-F:hover {
+    background-image: url('img/facebookR.png');
+}
+
+.image-L {
+    width: 25px;
+    height: 25px;
+    background-image: url('img/linkedin.png');
+    background-size: cover;
+    transition: background-image;
+}
+
+.image-L:hover {
+    background-image: url('img/linkedinR.png');
+}
+
+.image-Y {
+    width: 25px;
+    height: 25px;
+    background-image: url('img/youtube.png');
+    background-size: cover;
+    transition: background-image;
+}
+
+.image-Y:hover {
+    background-image: url('img/youtubeR.png');
+}
+
+form#carpoolForm{
+     max-width: 400px;
+     border: 3px solid rgb(45, 45, 45, 1.0);
+     border-radius: 20px;
+     padding: 20px;
+     margin-top: 50px;
+}
+
+thead {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 8px;
+    text-align: left;
+}
+
+.putain-de-covoit{
+    text-align: center;
+    color: aliceblue;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+    border: 2px dashed black;
+    border-radius: 30px;
+    padding: 30px;
+    width: 900px;
+}
+
+.AHH{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.covoit-resultat{
+    width: 500px;
+    height: 250px;
+    border: 3px solid rgb(45, 45, 45, 1.0);
+    border-radius: 20px;
+}
+
+table.edt{
+    border-collapse: collapse;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    margin-top: 60px;
+    width: 900px;
+    color: #2d2d2d;
+}
+
+textarea{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+h1#titre-idee{
+    text-align: center;
+    color: aliceblue;
+}
+
+.nom-prenom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+}
+
+form#Id{
+    color: aliceblue;
+}
+
+.tab-valider{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.valider-avec-validation{
+    margin: 50px auto 50px auto;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 3px solid greenyellow;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.edt td{
+    width: 3rem;
+    height: 3rem;
+    border: 3px solid rgb(45, 45, 45);
+    background-color: rgb(209, 54, 57);
+    text-align: center;
+}

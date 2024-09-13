@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>RIOT GAMES</title>
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css.css" />
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="img/logo.png">
+            <h1>Formulaire - Riot</h1>
+            <a href="Connexion.html"><div class="deco"></div></a>
+        </header>
+
+        <div class="container">
+            <div class="left-section">
+                <div class="button-list">
+                    <a id="head" href="Accueil.html"><button id="deplacement">Accueil</button></a>
+                    <a id="head" href="emploi_du_temps.html"><button id="deplacement">Emploi du temps</button></a>
+                    <a id="head" href="covoiturage.html"><button id="deplacement">Covoiturage</button></a>
+                    <a id="head" href="proposition_idees.html"><button id="deplacement">Proposition d'idées</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="contenu">
+            <form id="formulaire">
+                <table>
+                    <tr>
+                        <td colspan="2"><label for="question1">Combien de temps vous faut-il pour vous rendre au travail ?</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="question1" name="question1" value="option1"></td>
+                        <td><label for="option1">Moins de 15 minutes</label></td>
+                    </tr>                
+                    <tr>
+                        <td><input type="radio" id="question1" name="question1" value="option2"></td>
+                        <td><label for="option2">Entre 15 et 30 minutes</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="question1" name="question1" value="option3"></td>
+                        <td><label for="option3">Entre 30 minutes et 1 heure</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="question1" name="question1" value="option4"></td>
+                        <td><label for="option4">Plus de 1 heure</label></td>
+                    </tr>                
+                </table>
+                <label for="question2">Quel moyen de transport utilisez-vous pour vous rendre au travail ?</label>
+                <select id="question2" name="question2">
+                    <option>En voiture</option>
+                    <option>En bus</option>
+                    <option>En métro</option>
+                    <option>En trotinette éléctrique</option>
+                    <option>autres</option>
+                </select>
+                <label>Si autres, préciser :</label>
+                <input type="text" placeholder="Saisir votre réponse">
+
+                <label>Comment décririez-vous l’environnement de travail chez RIOT GAMES ?</label>
+                <input type="text" placeholder="Saisir votre réponse">
+
+                <label>Quels sont les avantages de travailler chez RIOT GAMES ?</label>
+                <input type="text" placeholder="Saisir votre réponse">
+
+                <label>Comment gérez-vous votre temps de travail ?</label>
+                <input type="text" placeholder="Saisir votre réponse">
+
+                <label>Selon vous, comment RIOT GAMES encourage-t-il la créativité et l’innovation ?</label>
+                <input type="text" placeholder="Saisir votre réponse">
+
+                <label>Comment RIOT GAMES encourage-t-il la collaboration entre les employés ?</label>
+                <input type="text" placeholder="Saisir votre réponse">
+
+                <label>Comment RIOT GAMES gère-t-il les conflits entre les employés ?</label>
+                <input type="text" placeholder="Saisir votre réponse">
+
+                <label>Comment RIOT GAMES gère-t-il les problèmes de communication entre les employés ?</label>
+                <input type="text" placeholder="Saisir votre réponse">
+
+                <label>Comment RIOT GAMES gère-t-il les problèmes de stress au travail ?</label>
+                <input type="text" placeholder="Saisir votre réponse">
+
+                <a href="Confirmation-formulaire.html"><button type="button">Envoyer mes réponse</button></a>
+            </form>
+        </div>
+        <footer>
+            <div class="footer">
+                <table id="fooot">
+                    <tr>
+                        <td rowspan="2"><img id="logoG" src="img/logoGris.png"></td>
+                        <div class="txt">
+                            <td><a href="https://www.riotgames.com/fr/presse">PRESSE</a></td>
+                            <td><a href="https://www.riotgames.com/fr/securite">SECURITÉ</a></td>
+                            <td><a href="https://www.riotgames.com/fr/mentions-legales">MENTIONS LÉGALES</a></td>
+                            <td><a href="https://www.riotgames.com/fr/privacy-notice-FR">POLITIQUE DE CONFIDENTIALITÉ</a></td>
+                            <td><a href="https://www.riotgames.com/fr/terms-of-service-FR">CONDITIONS GÉNÉRALES D'UTILISATION</a></td>
+                            <td><a href="https://support.riotgames.com/hc/fr">SUPPORT</a></td>
+                            <div class="icon">
+                                <td rowspan="2"><a href="https://www.facebook.com/RiotGames/" target="_blank"><div class="image-F"></div></a></td>
+                                <td rowspan="2"><a href="https://twitter.com/riotgames" target="_blank"><div class="image-X"></div></a></td>
+                                <td rowspan="2"><a href="https://www.linkedin.com/company/riot-games" target="_blank"><div class="image-L"></div></a></td>
+                                <td rowspan="2"><a href="https://www.youtube.com/riotgames" target="_blank"><div class="image-Y"></div></a></td>
+                            </div>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.riotgames.com/fr/e-verify-right-to-work">E-VERIFY</a></td>
+                        <td><a href="https://www.riotgames.com/fr/accessibility">ACCESIBILITÉ</a></td>
+                    </tr>
+                    </div>
+                </table>
+            </div>
+        </footer>
+    </body>
+</html>

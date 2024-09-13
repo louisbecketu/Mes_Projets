@@ -1,0 +1,26 @@
+Q1:
+
+Q2:
+select sum(cast(admis_bacg as float))/sum(bacg_princ)*100 as taux_gen_selec,
+sum(cast(admis_bact as float))/sum(bact_princ)*100 as taux_techno_selec 
+from info_admis join formations using(form_code) join localisation using(uai) 
+join candidats using(form_code) where form_selec like 'formation s%' 
+and region = 'Ile-de-France';
+
+
+Renvoie:
+taux_gen_selec=3,69
+taux_techno_selec=3,86
+
+Q3:
+select sum(cast(admis_brs as float))/sum(admis_bac)*100 as taux_etudes_courtes,
+(select sum(cast(admis_brs as float))/sum(admis_bac)*100 as taux_etudes_longues 
+from info_admis join formations using(form_code) join localisation using(uai) 
+where form_agreg <> 'BTS' and region = 'Ile-de-France') from info_admis 
+join formations using(form_code) join localisation using(uai) 
+where form_agreg = 'BTS' and region = 'Ile-de-France';
+
+
+Renvoie:
+taux_etudes_courtes=39,78
+taux_etudes_longues=21,51
